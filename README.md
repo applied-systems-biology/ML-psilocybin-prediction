@@ -60,13 +60,23 @@ This folder contains scripts for extracting quantitative morphological features 
 
 ### 📁 AI-based prediction of psilocybin
 
-This folder includes machine learning models and notebooks for predicting psilocybin production based on extracted features.
+This folder contains machine learning workflows for predicting psilocybin production from images and image-derived morphological features.
 
-- Data preprocessing and augmentation  
-- Model training (XGBoost, EfficientNet)  
-- Evaluation and prediction
-
-*(we can refine this together later)*
+- **Data augmentation.ipynb**  
+  Performs preprocessing and augmentation of microscopy images to improve model generalization.
+  The dataset used in this notebook can be found at:  
+  `Dataset/Imaging data/Cropped_inner_well/*.tif`
+  
+- **EfficientNet_B3.ipynb**  
+  Implements a deep learning approach based on EfficientNet_B3 for predicting psilocybin production directly from image data and biorocess parameters.
+  The datasets used in this notebook can be found at:  
+  - Imaging data: `Dataset/Imaging data/Cropped_inner_well/*.tif` (or augmented versions of these images)  
+  - Bioprocess parameters: `Dataset/Bioprocess parameters/Bioprocess parameters.csv`
+  
+- **XGBoost.ipynb**  
+  Applies gradient-boosted decision tree models (XGBoost) using morphological features and biorocess parameters to predict psilocybin production. Includes model training, evaluation, and feature importance analysis (e.g., SHAP).
+  The dataset used in this notebook can be found at:  
+  `Dataset/Image-derived features/Merged_df.csv`
 
 #### Python libraries required:
 - Python 3.9.19
