@@ -10,8 +10,7 @@ The data underlying this analysis can be found here:
 ### 📁 Image segmentation
 
 This folder contains ImageJ macros for processing raw microscopy images and extracting morphological structures.
-The raw microscopy images to run segmentation piplines can be found at:  
-  - `Dataset/Imaging data/*.tif` 
+The raw microscopy images to run segmentation piplines can be found at:  `Dataset/Imaging data/*.tif` 
 
 The workflow consists of the four following steps:
 
@@ -40,8 +39,7 @@ https://imagej.net/plugins/
 ### 📁 Feature extraction
 
 This folder contains scripts for extracting quantitative morphological features from segmented images.
-The segmnetation masks to run the feature extraction codes can be found at:  
-  - `Dataset/Segmentation watershed/*.tif` 
+The segmnetation masks to run the feature extraction codes can be found at:  `Dataset/Segmentation watershed/*.tif` 
 
 - **Morphometry.ijm**  
   Extracts morphometric features of connceted components, including area, perimeter, circularity, Feret diameter, inscribed disk radius, and geodesic elongation. Results are exported as a `.csv` table together with metadata parsed from file names.
