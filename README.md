@@ -60,9 +60,9 @@ This folder contains machine learning workflows for predicting psilocybin produc
   The dataset used in this notebook can be found at:  
   - `Dataset/Image-derived features/Merged_df.csv`
 
-## Requiredment
+## Requirements
 
-### Fiji plugins required
+### Fiji plugins
 - MorphoLibJ  
 - 3D ImageJ Suite  
 - Ridge Detection  
@@ -72,7 +72,7 @@ This folder contains machine learning workflows for predicting psilocybin produc
 For more information on how to install plugins, please visit:  
 https://imagej.net/plugins/
 
-### Python libraries required:
+### Python libraries
 - Python 3.9.19
 - numpy 2.0.2
 - pandas 2.2.2
@@ -87,7 +87,6 @@ https://imagej.net/plugins/
 - torchvision 0.19.1
 - xgboost 3.2.0
 - shap 0.51.0
-- 
-## Notes
 
+## Notes
 Detailed information and parameter settings are provided as comments within the scripts.
