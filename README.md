@@ -41,7 +41,7 @@ https://imagej.net/plugins/
 
 This folder contains scripts for extracting quantitative morphological features from segmented images.
 The segmnetation masks to run the feature extraction codes can be found at:  
-  - Segmentation data: `Dataset/Segmentation watershed/*.tif` 
+  - `Dataset/Segmentation watershed/*.tif` 
 
 - **Morphometry.ijm**  
   Extracts morphometric features of connceted components, including area, perimeter, circularity, Feret diameter, inscribed disk radius, and geodesic elongation. Results are exported as a `.csv` table together with metadata parsed from file names.
