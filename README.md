@@ -1,9 +1,11 @@
 # AI-Powered Prediction of Psilocybin Production from Microscopy Images of Aspergillus nidulans in Stirred-Tank Reactors
 This repository contains a machine learning pipeline for predicting psilocybin production from microscopy images of *Aspergillus nidulans* cultivated in stirred-tank bioreactors. The workflow integrates image segmentation, morphometric feature extraction, and predictive modeling (XGBoost and EfficientNet) to link fungal morphology with product formation dynamics.
 
+
 ## Data
 The data underlying this analysis can be found here:  
 👉 [link to be added]
+
 
 ## Repository Structure
 
