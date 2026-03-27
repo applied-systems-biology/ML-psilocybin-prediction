@@ -45,19 +45,30 @@ Please make sure the following plugins are installed:
 For more information on how to install plugins, please visit:  
 https://imagej.net/plugins/
 
-
-## Notes
-
-Detailed information and parameter settings are provided as comments within the scripts.
-
-
 ### 📁 Feature extraction
 
 This folder contains scripts for extracting quantitative morphological features from segmented images.
 
-*(you can expand this later)*
+- **Morphometry.ijm**  
+  Extracts morphometric features of connceted components, including area, perimeter, circularity, Feret diameter, inscribed disk radius, and geodesic elongation. Results are exported as a `.csv` table together with metadata parsed from file names.
 
----
+- **Erosion survival fraction.ijm**  
+  Computes erosion-based survival profiles by iteratively applying disk-shaped erosions to segmented structures and quantifying the remaining foreground area after each step. The output is saved as a `.csv` file containing erosion survival fractions across disk sizes.
+
+- **Degree centrality.ipynb**  
+  Computes graph-based degree centrality from segmented binary images by representing foreground pixels as nodes in an 8-connected network. The notebook generates centrality maps and exports degree-centrality distributions as a `.csv`.
+
+#### Python libraries required for `Degree centrality.ipynb`
+
+Please make sure the following Python libraries are installed:
+
+- `numpy`
+- `matplotlib`
+- `pandas`
+- `seaborn`
+- `Pillow`
+- `networkx`
+- `os`
 
 ### 📁 AI-based prediction of psilocybin
 
@@ -68,3 +79,7 @@ This folder includes machine learning models and notebooks for predicting psiloc
 - Evaluation and prediction
 
 *(we can refine this together later)*
+
+## Notes
+
+Detailed information and parameter settings are provided as comments within the scripts.
