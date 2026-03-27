@@ -11,7 +11,7 @@ The data underlying this analysis can be found here:
 
 This folder contains ImageJ macros for processing raw microscopy images and extracting morphological structures.
 The raw microscopy images to run segmentation piplines can be found at:  
- - Imaging data: `Dataset/Imaging data/*.tif` 
+  - `Dataset/Imaging data/*.tif` 
 
 The workflow consists of the four following steps:
 
@@ -27,17 +27,7 @@ The workflow consists of the four following steps:
 - **4_Watershed split.ijm**  
   Applies watershed segmentation to separate connected fungal structures.
 
-## How to run the code
-To install ImageJ/Fiji, please visit:  
-https://imagej.net/ij/download.html
-
-To open a macro:
-- Use **File → Open**, or  
-- **Plugins → Macros → Edit**, or  
-- Drag and drop the `.ijm` file onto the ImageJ/Fiji window  
-
-## Required plugins
-Please make sure the following plugins are installed:
+#### Fiji plugins required
 - MorphoLibJ  
 - 3D ImageJ Suite  
 - Ridge Detection  
@@ -51,7 +41,7 @@ https://imagej.net/plugins/
 
 This folder contains scripts for extracting quantitative morphological features from segmented images.
 The segmnetation masks to run the feature extraction codes can be found at:  
- - Imaging data: `Dataset/Segmentation watershed/*.tif` 
+  - Segmentation data: `Dataset/Segmentation watershed/*.tif` 
 
 - **Morphometry.ijm**  
   Extracts morphometric features of connceted components, including area, perimeter, circularity, Feret diameter, inscribed disk radius, and geodesic elongation. Results are exported as a `.csv` table together with metadata parsed from file names.
@@ -74,7 +64,7 @@ This folder contains machine learning workflows for predicting psilocybin produc
 - **EfficientNet_B3.ipynb**  
   Implements a deep learning approach based on EfficientNet_B3 for predicting psilocybin production directly from image data and biorocess parameters.
   The datasets used in this notebook can be found at:  
-  - Imaging data: `Dataset/Imaging data/Cropped_inner_well/*.tif` (or augmented versions of these images)  
+  - Imaging data: `Dataset/Imaging data/Cropped_inner_well/*.tif` (or augmented versions of these images obtained via `Data augmentation.ipynb`)  
   - Bioprocess parameters: `Dataset/Bioprocess parameters/Bioprocess parameters.csv`
   
 - **XGBoost.ipynb**  
