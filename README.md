@@ -5,7 +5,7 @@ This repository contains a machine learning pipeline for predicting psilocybin p
 
 ## Data
 The data underlying this analysis can be found here:  
-👉 https://doi.org/10.5281/zenodo.19254320
+👉 [https://doi.org/10.5281/zenodo.19254320](https://zenodo.org/records/19254321)
 
 ## Repository Structure
 
